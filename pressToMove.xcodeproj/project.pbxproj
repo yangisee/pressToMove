@@ -14,6 +14,7 @@
 		2F7BC5401C51AF8C00E585F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7BC53E1C51AF8C00E585F6 /* LaunchScreen.storyboard */; };
 		2F7BC54B1C51AF8C00E585F6 /* pressToMoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7BC54A1C51AF8C00E585F6 /* pressToMoveTests.swift */; };
 		2F7BC5561C51AF8C00E585F6 /* pressToMoveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7BC5551C51AF8C00E585F6 /* pressToMoveUITests.swift */; };
+		2F7BC5641C5282CF00E585F6 /* 13990.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F7BC5631C5282CF00E585F6 /* 13990.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2F7BC5511C51AF8C00E585F6 /* pressToMoveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pressToMoveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7BC5551C51AF8C00E585F6 /* pressToMoveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pressToMoveUITests.swift; sourceTree = "<group>"; };
 		2F7BC5571C51AF8C00E585F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F7BC5631C5282CF00E585F6 /* 13990.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 13990.jpg; path = ../../../../Documents/wallpapers/13990.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				2F7BC5351C51AF8C00E585F6 /* AppDelegate.swift */,
 				2F7BC5371C51AF8C00E585F6 /* ViewController.swift */,
 				2F7BC5391C51AF8C00E585F6 /* Main.storyboard */,
+				2F7BC5631C5282CF00E585F6 /* 13990.jpg */,
 				2F7BC53C1C51AF8C00E585F6 /* Assets.xcassets */,
 				2F7BC53E1C51AF8C00E585F6 /* LaunchScreen.storyboard */,
 				2F7BC5411C51AF8C00E585F6 /* Info.plist */,
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					2F7BC5311C51AF8C00E585F6 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WCHY49JFXL;
 					};
 					2F7BC5451C51AF8C00E585F6 = {
 						CreatedOnToolsVersion = 7.2;
@@ -231,6 +235,7 @@
 			files = (
 				2F7BC5401C51AF8C00E585F6 /* LaunchScreen.storyboard in Resources */,
 				2F7BC53D1C51AF8C00E585F6 /* Assets.xcassets in Resources */,
+				2F7BC5641C5282CF00E585F6 /* 13990.jpg in Resources */,
 				2F7BC53B1C51AF8C00E585F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,10 +404,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = pressToMove/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangisee.pressToMove;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +418,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = pressToMove/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangisee.pressToMove;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -484,6 +495,7 @@
 				2F7BC55C1C51AF8C00E585F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F7BC55D1C51AF8C00E585F6 /* Build configuration list for PBXNativeTarget "pressToMoveTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +504,7 @@
 				2F7BC55F1C51AF8C00E585F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F7BC5601C51AF8C00E585F6 /* Build configuration list for PBXNativeTarget "pressToMoveUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +513,7 @@
 				2F7BC5621C51AF8C00E585F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

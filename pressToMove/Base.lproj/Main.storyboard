@@ -1,25 +1,88 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pressToMove" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrV-Ox-S9k">
+                                <rect key="frame" x="172" y="513" width="30" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="↓"/>
+                                <connections>
+                                    <action selector="goDown" destination="BYZ-38-t0r" eventType="touchUpInside" id="4FB-9Y-0Qp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mI7-oH-1Vt">
+                                <rect key="frame" x="307" y="451" width="30" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="→"/>
+                                <connections>
+                                    <action selector="goRight" destination="BYZ-38-t0r" eventType="touchUpInside" id="sXY-ua-g0N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYi-pG-UjT">
+                                <rect key="frame" x="48" y="451" width="30" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="←"/>
+                                <connections>
+                                    <action selector="goLeft" destination="BYZ-38-t0r" eventType="touchUpInside" id="QW8-C4-HIl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7b-Dn-ZMI">
+                                <rect key="frame" x="172" y="386" width="30" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="↑"/>
+                                <connections>
+                                    <action selector="goUp" destination="BYZ-38-t0r" eventType="touchUpInside" id="YEL-CZ-3rg"/>
+                                </connections>
+                            </button>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="13990.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6jn-Pg-quD">
+                                <rect key="frame" x="67" y="131" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="lJk-Sa-bll"/>
+                                    <constraint firstAttribute="height" constant="128" id="rfB-86-7V1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6jn-Pg-quD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="40i-cB-68M"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="d7b-Dn-ZMI" secondAttribute="bottom" constant="233" id="4Tq-fh-Mkf"/>
+                            <constraint firstItem="HrV-Ox-S9k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4si-5o-S7v"/>
+                            <constraint firstItem="6jn-Pg-quD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="131" id="AyG-TH-c1C"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="mI7-oH-1Vt" secondAttribute="bottom" constant="168" id="B91-1i-qmV"/>
+                            <constraint firstItem="KYi-pG-UjT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="FXV-F8-xoE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mI7-oH-1Vt" secondAttribute="trailing" constant="22" id="IeN-YU-KFL"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="HrV-Ox-S9k" secondAttribute="bottom" constant="106" id="Pe5-rF-wG7"/>
+                            <constraint firstItem="d7b-Dn-ZMI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XKY-ln-FBE"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="KYi-pG-UjT" secondAttribute="bottom" constant="168" id="vCJ-2y-axO"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imge" destination="6jn-Pg-quD" id="Vvu-QI-BND"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="222.5" y="292.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="13990.jpg" width="2560" height="1600"/>
+    </resources>
 </document>
